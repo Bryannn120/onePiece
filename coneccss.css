@@ -1,0 +1,322 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    
+    
+    
+}
+
+nav {
+    display: flex;
+    background-color: rgb(43, 42, 40);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    z-index: 97;
+    position: sticky;
+    top: 0;
+}
+
+/* penggantian navigasi
+.menu {
+    display: none;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+    z-index: 90;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /*
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+    */
+}
+    
+    
+    /* penggantian navigasi */
+    /*.menu_link {
+        display: none;
+    }*/
+    
+    
+nav ul li a:hover {
+        font-weight: bold;
+        font-size: 18px;
+        background-color: rgb(233, 39, 39);
+        transition: all 0.5s;
+}
+
+    
+.banner {
+        background-image:url(BRYAN/one-piece-hd-background_011529329_277.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    main {
+        padding: 10px;
+        overflow: auto;
+    }
+    
+    main p {
+        margin-top: 5px;
+    }
+    
+    .card {
+        box-shadow: 0 6px 10px 0 rgba(160, 18, 18, 0.603);
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    section {
+        margin-top: 20px;
+    }
+
+    
+    .kmr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    
+    }
+    
+    .kmr div {
+        flex-grow: 1;
+        border: solid 1px rgb(106, 113, 119);
+        border-radius: 3px;
+        padding: 5px;
+        margin: 4px;
+        text-align: center;
+    }
+    
+    .kmr .pic1:hover {
+        background-color: rgb(74, 76, 78);
+    }
+    
+    .gm1 {
+        height: 100px;
+    
+    }
+    
+    .fas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    
+    }
+    
+    .fas div {
+        flex-grow: 1;
+        border: solid 1px rgb(106, 113, 119);;
+        border-radius: 3px;
+        padding: 5px;
+        margin: 4px;
+        text-align: center;
+    }
+    
+    .fas .fasi1:hover {
+        background-color: rgb(106, 113, 119);
+    }
+    
+    .fass {
+        height: 100px;
+    
+    }
+    
+    #konten {
+        float: left;
+        width: 73%;
+    }
+    
+    aside {
+        float: right;
+        width: 25%;
+        padding-left: 10px;
+    }
+    
+    aside table {
+        margin-top: 10px;
+    }
+    
+    .tdhead {
+        border-bottom: 2px solid rgb(248, 2, 2);
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 90px;
+    }
+    
+    .ikon {
+        width: 20px;
+    }
+    
+    .ikon:hover {
+        width: 40px;
+        transition: 0.4s;
+    }
+    
+    footer {
+        display: grid;
+        height: 30px;
+        /*background-image: url(../assets/prism-toptal.png);*/
+        background-repeat: repeat-x;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    footer p {
+        color: rgb(66, 70, 71);
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: rgba(0, 44, 240, 0.829);
+      
+    }
+    a:hover {
+        font-weight: bold;
+        font-size: 19px;
+        background-color: rgba(56, 54, 61, 0.5);
+        transition: all 0.5s;
+    } 
+/*     
+    #link{
+        text-decoration: none;
+        color: rgba(0, 17, 255, 0.829);
+    }
+    #link :hover{
+        font-weight: bold;
+        font-size: 23px;
+        background-color: rgba(20, 20, 20, 0.986);
+        transition: all 0.5s;
+    }
+     */
+    /* Pengaturan responsif */
+    /* ukuran tablet */
+    @media screen and (max-width: 768px) {
+        nav ul {
+            width: 50%;
+        }
+    
+        #konten,
+        aside {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    
+    /* ukuran hp */
+    @media screen and (max-width: 576px) {
+        .menu_link {
+            display: flex;
+            height: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            z-index: 99;
+        }
+    
+        .menu_link span {
+            display: block;
+            width: 20px;
+            height: 4px;
+            background-color: whitesmoke;
+            border-radius: 3px;
+            transition: all 0.5s;
+        }
+    
+    
+        nav ul {
+            position: absolute;
+            right: 0;
+            top: 40px;
+            height: 100vh;
+            width: 80%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: steelblue;
+            opacity: 0.8;
+            transform: translatex(100%);
+            transition: all 1s;
+        }
+    
+        nav ul li a {
+            font-weight: bold;
+        }
+    
+        nav ul.showslide {
+            transform: translatex(0);
+        }
+    
+        nav span.animspan {
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+        }
+    
+        nav span.animspan2 {
+            transform: rotate(90deg);
+        }
+    
+        nav span.animspan3 {
+            transform: scale(0);
+        }
+    
+        .kmr {
+            flex-direction: column;
+        }
+    
+        .fas {
+            flex-direction: column;
+        }
+    
+        #konten,
+        aside {
+            width: 100%;
+            padding: 0;
+        }
+    
+        footer p {
+            font-size: 0.8em;
+        }
+    }
+    a.tbl-biru {
+        background: #3f72af;
+        border-radius: 15px;
+        margin-top: 2px;
+        padding: 10px 15px 10px 15px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    a.tbl-biru:hover {
+        background: #880606;
+        text-decoration: none;
+    }
+    
